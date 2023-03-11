@@ -63,7 +63,7 @@ class Save:
 
 
 def index(request):
-    return HttpResponse("La pagina indice funciona, Bienvenido a los endpoints")
+    return render(request, 'index.html')
 
 @csrf_exempt
 def login(request):
